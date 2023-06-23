@@ -1,92 +1,15 @@
-# FOSS2023-1_final
+# FOSS2023-1_final: ZEP 스크립트 개발 및 배포 간단 가이드
 
+202020810 소프트웨어학과 소성하
 
+<br>
+## 아이템 선정 동기
+저는 2022년 때 휴학 기간동안 '메타버스'를 키워드로 하는 소규모의 스타트업에서 근무를 했던 적이 있습니다. 그곳에서 메타버스 속에서 즐기는 방탈출 콘텐츠나 진로 교육 콘텐츠 등을 고안하고 만들었고, 그 때 주로 사용하던 툴이 바로 ZEP과 ZEP script였습니다. 그러나 당시에 소규모인 스타트업이었기 때문에 코딩 관련 개발을 하는 사람은 저뿐이었고 따라서 zep script 관련 부분은 오롯이 제가 읽고 이해하고 다른 사람들에게 무엇이 되고 무엇은 안되는지를 설명해주어야 했습니다. 따라서 처음에는 관련 유튜브도 찾아보는 등의 서치를 해보았지만, 코로나 시대부터 생긴 새로운 툴이었기 때문에 관련 정보가 많이 없다는 점이 늘 아쉬웠습니다. 그러한 기억들이 지금까지 남아서, 만약 zep script를 사용해보고 싶은 사람이 있다면 나보다는 좀 더 수월하게 접근하면 좋겠다는 생각에서 이 아이템을 선정하게 되었습니다. 
 
-## Getting started
+## 어려웠던 점 및 해결
+알고 있는 지식을 누군가에게 설명하기 위해 말로 바꾼다는 것이 생각보다 더 어려운 부분이었습니다. 기존에 zep script를 익숙하게 사용하였기에 쉽게 설명할 수 있을 것이라고 생각했으나, 실제로 누군가를 이해시키기 위해서는 그것을 제대로 알기 위한 선행정보를 설명하는 부분이 훨씬 더 중요함을 느꼈습니다. zep script의 개발과 배포 과정을 설명하기 위해서는 zep script를 개발하는 환경은 어떻게 조성되어 있나를 설명해야 했고, zep script를 개발하는 환경을 설명하기 이전에는 zep이 무엇인지부터 설명해야 하겠구나를 느꼈습니다. 따라서 그 앞부분을 설명하기 위해서 자료를 조사하고 모으는 과정에도 꽤나 시간이 걸렸던 것 같습니다. 
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://git.ajou.ac.kr/soseongha/foss2023-1_final.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.ajou.ac.kr/soseongha/foss2023-1_final/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## 감상 및 느낀 점
+저에게는 단순하고 별 거 아니라고 생각이 드는 지식이 누군가에게는 절실하고 대단해보이는 지식이 될 수 있음을, 저의 동영상을 만들면서 그리고 다른 사람들이 만든 동영상을 보면서 깨닫게 된 것 같습니다. 유튜브의 SW tool time에 나와있는 여러 동영상 주제들을 보면서 하나하나 모두 신기하고 대단하며 그들에게는 이미 알던 지식이 제게는 엄청 큰 자산처럼 보였습니다. 
+또한 오픈소스의 정신에 기여하는 작은 행동을 이루었다고 생각하니 오픈소스라는 것이 사실은 그렇게 거창하게 시작해야 하는 것이 아님을 알게 되었습니다. 내가 가진 작은 것을 나누고 재능기부하면, 이 작은 것들이 모여 큰 요소를 이루게 됨을 조금 체감한 것 같습니다. 가장 유명한 오픈소스들 중 하나인 리눅스 커널도 이런 식으로 조그마한 부분을 커밋하고 피드백한다면, 그것들이 모여 혼자는 절대 완벽히 완성하기 힘든 리눅스 커널을 만드는 것이라는 점이 감명이 깊습니다. 
+이 기말 과제뿐만이 아니라 오픈소스SW입문 수업을 듣는 내내 위와 같은 깨달음과 오픈소스 정신의 웅장함을 보게 된 것 같습니다. 앞으로 저 또한 개발 관련 직무를 하거나 IT 업계에서 일을 하게 될지도 모르는데, 그때에 가진 것을 감춰서 나 혼자 앞으로 가는 속도보다, 나눠서 함께 앞으로 가는 속도가 빠름을 기억하고 그 정신을 계승하는 한 명의 작은 개발자가 되고 싶다는 생각이 듭니다. 
